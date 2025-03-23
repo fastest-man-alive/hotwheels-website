@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.page-title {
+    font-size: 2.5rem; /* Larger font for the heading */
+    margin-bottom: 30px; /* Adds space between the heading and the logos */
+    color: #333; /* Dark color for the text */
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Allow logos to wrap to the next line */
+    justify-content: center; /* Center logos on each line */
+}
+
+.brand-logo img {
+    height: 250px;  /* Fixed height for logos */
+    width: auto;  /* Automatically adjust width to maintain aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.brand-logo img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: hot-wheels
+        image: us-central1-docker.pkg.dev/solo-levelling-arise/hot-wheels/hw-image:latest
+        ports:
+        - containerPort: 80
