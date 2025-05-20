@@ -14,6 +14,10 @@ spec:
     spec:
       containers:
       - name: hot-wheels
-        image: us-central1-docker.pkg.dev/solo-levelling-arise/hot-wheels/hw-image:latest
+        image: us-central1-docker.pkg.dev/project-id/hot-wheels/hw-image:latest
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
         ports:
         - containerPort: 80
